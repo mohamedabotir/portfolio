@@ -7,7 +7,10 @@
     <meta name="keywords" content="MohamedAbdalsalamAbotir,portfolio,full stack Developer">
     <meta http-equiv="X-UA-Combatible" content="ie-edge">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer>
+       
+    </script>
 </head>
 <body>
     <div class="container">
@@ -20,9 +23,8 @@
             </a>
             <ul class="show-desktop hide-mobile" id="nav">
                 <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit"></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
             </ul>
         </nav>
@@ -31,7 +33,7 @@
         <img src="images/server.svg" alt="portfolio picture" class="portfolio">
         <h1>Software serveices for Future</h1>
         <p class="subhead">Go See the Future in present eye</p>
-        <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobil show-desktop">
+        <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobil show-desktop" id="scroll">
     </section>
     </div>
     <div class="blue-container">
@@ -65,7 +67,7 @@
     </div>
     <div class="container">
         <h2>My projects and other works</h2>
-        <a href="#" class="mprojects">MyProjects</a>
+        <a href="https://github.com/mohamedabotir" class="mprojects" target="_blank">MyProjects</a>
     </div>
     <footer>
         <div class="footer-container">
@@ -77,12 +79,35 @@
 <p>Tanta - Egypt</p>
 </address>
             <ul class="links">
-<li><a href="#">Terms of Service</a></li>
-<li><a href="#">Privacy policy</a></li>
+<li><div class="LI-profile-badge"  data-version="v1" data-size="small" data-locale="ar_AE" data-type="horizontal" data-theme="dark" data-vanity="mohamed-abotir-9b4b9318b"><a class="LI-simple-link" href='https://eg.linkedin.com/in/mohamed-abotir-9b4b9318b?trk=profile-badge'>linkedin Profile</a></div></li>
 
             </ul>
         </div>
         </div>
     </footer>
+   
+       
+<script>
+    var menu=document.getElementById('menu');
+   var nav=document.getElementById('nav');
+   var exit=document.getElementById('exit');
+   var scroll=document.getElementById('scroll');
+menu.addEventListener('click',(e)=>{
+nav.classList.toggle('hide-mobile');
+e.preventDefault();
+});
+exit.addEventListener('click',(e)=>{
+nav.classList.add('hide-mobile');
+e.preventDefault();
+});
+scroll.addEventListener('click',e=>{
+    
+    window.scrollTo(0,document.body.clientHeight-50);
+    e.preventDefault();
+});
+
+</script>
 </body>
 </html>
+
+    
