@@ -11,6 +11,10 @@ p, blockquote {
     font-size: .9em;
     line-height: 1.6em;
 }
+figure{
+left: 40%;
+    position: relative;
+}
 ul { 
     list-style-type: none; 
     margin: 0;
